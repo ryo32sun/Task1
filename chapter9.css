@@ -1,0 +1,91 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color:#ff9a4b;
+}
+
+main {
+  margin: 50px auto;
+  width: 960px;
+  display: flex;
+}
+
+.main-box {
+  width:300px;
+  background-color: #eee;
+  position: relative;
+  padding:10px;
+}
+
+.main-box:nth-child(2) {
+  margin: 0 30px;
+}
+
+.step {
+  position: absolute;
+  top:0;
+  left:0;
+  background-color:#ff9a4b;
+  color: #fff;
+}
+
+.photo {
+  background-size: cover;
+  /*画像のポジション間違い　誤:center*/
+  background-position: bottom;
+  height: 150px;
+}
+
+.photo-1 {
+  background-image: url(img9/flow01.png);
+}
+
+.photo-2 {
+  background-image: url(img9/flow02.png);
+}
+
+.photo-3 {
+  background-image: url(img9/flow03.png);
+}
+
+.title {
+  margin: 15px 0 5px 0;
+}
+
+
+footer {
+  width:100%;
+  height: 50px;
+  background-color:#aaa;
+}
+
+@media screen and (max-width:768px) {
+  
+  main {
+    width: 100%;
+    display: block;
+  }
+  
+  .main-box {
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .main-box:nth-child(2) {
+    margin: 20px 0 20px 5%;
+  }
+  
+  h3 {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+}
